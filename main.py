@@ -27,7 +27,7 @@ def main():
     # Preprocess training data
     train_df = preprocess_data(train_df, categorical_cols)
 
-    # Sample 1% of the data
+    # Sample 50% of the data
     train_df_sampled = train_df.sample(frac=0.5, random_state=12)
     print("Sampled training data shape:", train_df_sampled.shape)
 
